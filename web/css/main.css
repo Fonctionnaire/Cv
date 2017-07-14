@@ -1,0 +1,155 @@
+/* HEADER ET FOOTER */
+
+
+.div-header
+{
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.nav-wrapper
+{
+    display: flex;
+
+}
+
+.nav-wrapper ul
+{
+    margin: auto;
+
+}
+
+.nav-wrapper li:hover
+{
+    background-color: #1976d2 !important;
+}
+
+.nav-wrapper li a
+{
+    transition: 0.2s;
+}
+
+.nav-wrapper li a:hover
+{
+    font-size: 1.4em;
+}
+
+/* SCROLLSPY */
+.lien-scroll
+{
+
+}
+
+/* SECTION PRESENTATION */
+
+.presentation
+{
+    min-width: 100%;
+    height: 93vh;
+}
+
+.hello-world
+{
+    padding-top: 10%;
+    display: flex;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    color: #689f38;
+    opacity: 0;
+
+}
+
+.hello-world h1
+{
+    margin: auto;
+    font-size: 5em !important;
+}
+
+.block-nom-metier
+{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo
+{
+    width: 0px;
+    height: 0px;
+}
+
+.photo, .nom, .metier, .langage-web, .text-presentation
+{
+    font-size: 0em;
+    opacity: 0;
+}
+
+.block-presentation
+{
+    opacity: 0;
+}
+
+.hr-presentation
+{
+    border-color: black;
+    opacity: 0;
+}
+
+.class-thibaut li
+{
+    padding-left: 2%;
+}
+
+/* PAGE MON PARCOURS */
+
+.date-formation
+{
+    font-style: italic;
+}
+ .description-formation
+ {
+     margin-top: 25px !important;
+     margin-bottom: 25px;
+     margin-left: 20%;
+ }
+
+ .description-formation li
+ {
+     margin-bottom: 15px;
+     font-size: 1.1em;
+ }
+
+ .lien-formation
+ {
+     margin-left: 40%;
+     margin-top: 30px;
+ }
+
+ .six-projet
+ {
+     margin-left: 2% !important;
+     margin-top: 10px !important;
+ }
+
+ .six-projet p
+ {
+     margin-bottom: 10px !important;
+ }
+
+ .description-emploi
+ {
+     margin-top: 25px !important;
+     margin-bottom: 25px;
+ }
+
+ .description-emploi li
+ {
+     margin-bottom: 15px;
+     font-size: 1.2em;
+ }
+
+ .lien-emploi
+ {
+     margin-left:36%;
+     margin-top: 30px;
+ }

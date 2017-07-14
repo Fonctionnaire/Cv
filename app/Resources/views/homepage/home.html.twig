@@ -1,4 +1,46 @@
 {% extends 'layout.html.twig' %}
+{% block javascript %}
+    <script src="{{ asset('javascript/helloAnimation.js') }}"></script>
+    <!-- SCROLLSPY -->
+    <script src="{{ asset('javascript/scrollspy.js') }}"></script>
+{% endblock %}
 {% block content %}
-    <h1>HELLO WORLD</h1>
+
+    <div class="presentation brown lighten-3">
+        <div class="hello-world"><h1>HELLO WORLD</h1></div>
+        <div class="block-nom-metier">
+            <div class="photo z-depth-2"><img src="{{ asset('images/thibautGruffy.jpg') }}" alt="thibaut gruffy"></div>
+            <div class="blue-grey block-presentation z-depth-2">
+                <div class="nom white-text center">Thibaut Gruffy</div>
+                <div>
+                    <div class="metier white-text center">Futur Junior Back-End Developper</div>
+                    <hr class="hr-presentation">
+                </div>
+                <div class="text-presentation blue-grey darken-4 z-depth-2">
+                    <p class="white-text"><span class="red-text text-darken-2">class</span> ThibautGruffy</p>
+                    <p class="white-text">{</p>
+                    <ul class="class-thibaut">
+                        <li class="white-text"><span class="red-text text-darken-2">private</span> $passionDuCode = <span class="red-text text-darken-2">true</span></li>
+                        <li class="white-text"><span class="red-text text-darken-2">private</span> $autonomie = <span class="red-text text-darken-2">true</span></li>
+                        <li class="white-text">
+                            <span class="red-text text-darken-2">  private</span> $adaptation = <span class="red-text text-darken-2">true</span>
+                        </li>
+                    </ul>
+                    <p class="white-text">}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <span id="parcours" class="scrollspy"></span>
+    {% include 'parcours/parcours.html.twig' %}
+    <span id="competences" class="scrollspy"></span>
+    {% include 'competences/competences.html.twig' %}
+
+    <div class="fixed-action-btn">
+        <a href="#scroll" class="lien-scroll blue darken-1 z-depth-5 waves-effect waves-light btn btn-floating">
+            <i class="medium material-icons icone white-text">navigation</i>
+        </a>
+    </div>
 {% endblock %}

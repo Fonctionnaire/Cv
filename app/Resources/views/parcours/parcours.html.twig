@@ -1,0 +1,57 @@
+{% block parcours %}
+<div  class="parcours white container ">
+    <div class="card row">
+        <div class="card-content">
+           <span class="card-title center">
+               <h2 class="light-green-text text-darken-2">Mon parcours</h2>
+           </span>
+        </div>
+        <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#formation">Formation Chef de projet multimédia</a></li>
+                <li class="tab"><a href="#vente">Parcours professionnel</a></li>
+            </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+            <div id="formation">
+                <h4 class="center">Spécialité : développement web</h4>
+                <p class="center date-formation">Organisme de formation : OpenClassrooms</p>
+                <p class="center date-formation">Juillet 2016 - Juillet 2017</p>
+                <p class="center date-formation">Titre reconnu par l'Etat, enregistré au RNCP au niveau II</p>
+                <hr>
+                <ul class="description-formation">
+                    <li>Apprentissage de différents langages web : HTML5/CSS3/BootStrap, JavaScript/Jquery, PHP, Symfony, etc</li>
+                    <li>Gestion de projets de A à Z</li>
+                    <li>6 projets professionnels réalisés pendant la formation :</li>
+                    <div class="six-projet">
+                        <p>1. Création du site internet d'une mairie - CMS WordPress</p>
+                        <p>2. Réalisation complète de la partie gestion de projet pour la création d'un site internet d'un salon de l'oenologie de Bordeaux</p>
+                        <p>3. Création d'un blog (avec zone admin) pour un écrivain - Base PHP/Symfony/MySql/Git</p>
+                        <p>4. Création d'une plate-forme de réservation de billet pour le musée du Louvre - PHP/Symfony/MySql/Git et documents de gestion de projet</p>
+                        <p>5. Création en équipe d'un site internet permettant la saisie et la visualisation d'observations ornithologique - Base PHP/Symfony/MySql/Git et gestion de projet complète</p>
+                        <p>6. Création d'un site internet pour l'association EITIA permettant de promouvoir leur activité - CMS WordPress et getion de projet</p>
+                    </div>
+                </ul>
+                <hr>
+                <a href="https://openclassrooms.com/paths/chef-de-projet-multimedia-developpement" target="_blank" class="waves-effect waves-light btn light-green darken-1 lien-formation">
+                    En savoir plus sur la formation
+                </a>
+            </div>
+            <div id="vente">
+                <h4 class="center">Conseiller de vente et relation client dans différents secteurs</h4>
+                <p class="center date-formation">2009 - 2015</p>
+                <hr>
+                <ul class="description-emploi">
+                    <li class="center">Concepteur/vendeur cuisine - Conforama</li>
+                    <li class="center">Technico-commercial - Cybertek</li>
+                    <li class="center">Technicien support - Supporter</li>
+                    <li class="center">Vendeur cuisine - Ikea</li>
+                    <li class="center">Animateur / Vendeur - Events Media</li>
+                </ul>
+                <hr>
+                <a class="waves-effect waves-light btn light-green darken-1 lien-emploi">Mon C.V. Complet -> Contactez-moi</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

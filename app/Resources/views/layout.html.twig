@@ -2,12 +2,35 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <meta charset="UTF-8">
+    {% include 'scriptAndMeta/meta.html.twig' %}
+    <title>Thibaut Gruffy</title>
 </head>
 <body>
+<header>
+    <div id="scroll" class="div-header navbar-fixed scrollspy">
 
+        <nav class="blue darken-1 z-depth-5">
+            <div class="nav-wrapper">
+                <ul class="hide-on-med-and-down">
+                    <li><a href="{{ path('home') }}">< Accueil ></a></li>
+                    <li><a href="#parcours">< Parcours ></a></li>
+                    <li><a href="#competences">< Compétences ></a></li>
+                    <li><a href="#">< Me contacter ></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+{% include 'scriptAndMeta/script.html.twig' %}
+{% block javascript %}
+{% endblock %}
 {% block content %}
 {% endblock %}
+<footer>
 
+</footer>
 </body>
 </html>
