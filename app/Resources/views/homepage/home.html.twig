@@ -3,14 +3,16 @@
     <script src="{{ asset('javascript/helloAnimation.js') }}"></script>
     <!-- SCROLLSPY -->
     <script src="{{ asset('javascript/scrollspy.js') }}"></script>
+
 {% endblock %}
 {% block content %}
 
-    <div class="presentation brown lighten-3">
+    <div class="container z-depth-1">
+    <div class="presentation brown lighten-4">
         <div class="hello-world"><h1>HELLO WORLD</h1></div>
         <div class="block-nom-metier">
             <div class="photo z-depth-2"><img src="{{ asset('images/thibautGruffy.jpg') }}" alt="thibaut gruffy"></div>
-            <div class="blue-grey block-presentation z-depth-2">
+            <div class="light-green darken-1 block-presentation z-depth-2">
                 <div class="nom white-text center">Thibaut Gruffy</div>
                 <div>
                     <div class="metier white-text center">Futur Junior Back-End Developper</div>
@@ -32,12 +34,13 @@
         </div>
 
     </div>
-
+    </div>
     <span id="parcours" class="scrollspy"></span>
     {% include 'parcours/parcours.html.twig' %}
     <span id="competences" class="scrollspy"></span>
     {% include 'competences/competences.html.twig' %}
-
+    <span id="realisation" class="scrollspy"></span>
+    {% include 'realisations/realisations.html.twig' %}
     <div class="fixed-action-btn">
         <a href="#scroll" class="lien-scroll blue darken-1 z-depth-5 waves-effect waves-light btn btn-floating">
             <i class="medium material-icons icone white-text">navigation</i>
