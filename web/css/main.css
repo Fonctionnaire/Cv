@@ -4,7 +4,7 @@
 .div-header
 {
     width: 100%;
-    margin-bottom: 0 !important;
+    margin-bottom: 15px !important;
 }
 
 .nav-wrapper
@@ -130,8 +130,7 @@
 
  .lien-formation
  {
-     margin-left: 40%;
-     margin-top: 30px;
+     margin-top: 25px !important;
  }
 
  .six-projet
@@ -159,8 +158,7 @@
 
  .lien-emploi
  {
-     margin-left:36%;
-     margin-top: 30px;
+     margin-top: 25px !important;
  }
 
  /* PAGE COMPETENCE */
@@ -175,4 +173,74 @@
 {
     display: flex;
     justify-content: space-around;
+}
+
+/* PAGE REALISATIONS */
+.collapsible-body
+{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.collapsible-header h4
+{
+    font-size: 1.2em !important;
+}
+
+.image-collapse
+{
+    max-width:300px;
+}
+
+.text-collapse
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.div-modal
+{
+    margin-top: 3%;
+    margin-left: 5% !important;
+    max-width: 800px !important;
+}
+
+.div-screen-projet
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.screen-projet
+{
+    margin-bottom: 30px;
+}
+
+.screen-projet img
+{
+    width: 250px;
+}
+
+#modal1 p, #modal2 p, #modal3 p, #modal4 p, #modal5 p, #modal6 p
+{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.contraintes
+{
+    margin-left: 5%;
+    margin-bottom: 25px;
+}
+
+.contraintes li
+{
+    margin-bottom: 10px;
+}
+
+.plus-value
+{
+    font-weight: bold;
+    font-size: 1.2em;
 }

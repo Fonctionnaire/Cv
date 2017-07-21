@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+<div class="container contact-container">
+    <div class="row col s12">
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col s6 input-field">
+                {{ form_label(form.name, "Votre nom") }}
+                {{ form_widget(form.name, {'attr': {'class': 'validate'}}) }}
+                {{ form_errors(form.name) }}
+            </div>
+            <div class="col s6">
+                {{ form_label(form.firstName, "Votre prénom") }}
+                {{ form_widget(form.firstName, {'attr': {'class': 'validate'}}) }}
+                {{ form_errors(form.firstName) }}
+            </div>
+        </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+{% endblock %}
