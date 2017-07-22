@@ -36,7 +36,10 @@ class ContactType extends AbstractType
                         'maxMessage' => 'Le prénom ne peut dépasser 40 caractères'
                     )),
                 )))
-            ->add('societe', TextType::class)
+            ->add('societe', TextType::class, array(
+
+                'required' => false,
+            ))
             ->add('mail', EmailType::class, array(
                 'constraints' => array( new Email(),
                     new NotBlank(),
@@ -45,9 +48,7 @@ class ContactType extends AbstractType
                 'constraints' => array( new NotBlank(),
                     new Length(array(
                         'min' => 2,
-                        'max' => 1205,
-                        'minMessage' => 'Votre message doit comporter au moins 2 caractères',
-                        'maxMessage' => 'Votre message ne peut dépasser 1200 caractères'
+                        'minMessage' => 'Votre message doit comporter au moins 2 caractères'
                     )),
                 )))
             ->add('envoyer', SubmitType::class)

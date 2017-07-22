@@ -3,6 +3,7 @@
 namespace AppBundle\Controller\Contact;
 
 use AppBundle\Form\Type\ContactType;
+use AppBundle\Services\Contact\Contact;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -15,7 +16,7 @@ class ContactController extends Controller
      * @Route("/contact", name="contact")
      * @Method({"GET", "POST"})
      */
-    public function contactAction(Request $request)
+    public function contactAction(Request $request, Contact $contact)
     {
 
         $form = $this->createForm(ContactType::class);
@@ -23,7 +24,7 @@ class ContactController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()){
             $data = $form->getData();
-            $this->get('app.send_contact_mail')->sendContactMail($data);
+            $contact->sendContactMail($data);
             $this->addFlash('success', 'Votre message à bien été envoyé.');
             return $this->redirectToRoute('contact');
         }

@@ -244,3 +244,81 @@
     font-weight: bold;
     font-size: 1.2em;
 }
+
+/* PAGE CONTACT */
+
+.contact-container
+{
+    padding: 35px;
+    margin-top: 50px !important;
+}
+
+.champ-oblig
+{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.input-field label {
+    color: #c0ca33 !important;
+    font-size: 15px !important;
+}
+
+.input-field input[type=text] {
+
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field input[type=email] {
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field input[type=password] {
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field input[type=text].valid
+{
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field input[type=email].valid
+{
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field input[type=password].valid
+{
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field textarea{
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.input-field textarea.valid
+{
+    border-bottom: 2px solid #c0ca33 !important;
+}
+
+.valider_contact
+{
+    display: block;
+    margin-left: auto;
+}
+
+.contact-annexe
+{
+    margin-top: 35px;
+}
+
+.contact-annexe hr
+{
+    margin-bottom: 35px;
+}
+
+.contact-annexe p
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}

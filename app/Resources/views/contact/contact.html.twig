@@ -1,7 +1,15 @@
 {% extends 'layout.html.twig' %}
+{% block textAreaScript %}
+    <script>
+        $('.materialize-textarea').val('New Text');
+        $('.materialize-textarea').trigger('autoresize');
+    </script>
+{% endblock %}
 {% block content %}
-<div class="container contact-container">
-    <div class="row col s12">
+<div class="container contact-container blue-grey lighten-5">
+    <h1 class="light-green-text text-darken-2">Me contacter</h1>
+    <p class="light-green-text text-darken-2 champ-oblig">Tous les champs sont obligatoires</p>
+    <div>
         {{ form_start(form) }}
         <div class="row">
             <div class="col s6 input-field">
@@ -9,13 +17,40 @@
                 {{ form_widget(form.name, {'attr': {'class': 'validate'}}) }}
                 {{ form_errors(form.name) }}
             </div>
-            <div class="col s6">
+            <div class="col s6 input-field">
                 {{ form_label(form.firstName, "Votre prénom") }}
                 {{ form_widget(form.firstName, {'attr': {'class': 'validate'}}) }}
                 {{ form_errors(form.firstName) }}
             </div>
         </div>
+        <div class="row">
+            <div class="input-field col s12">
+                {{ form_label(form.societe, "Nom de votre société") }}
+                {{ form_widget(form.societe, {'attr': {'class': 'validate'}}) }}
+                {{ form_errors(form.societe) }}
+            </div>
+        </div>
+            <div class="input-field">
+                {{ form_label(form.mail, "Votre e-mail") }}
+                {{ form_widget(form.mail, {'attr': {'class': 'validate'}}) }}
+                {{ form_errors(form.mail) }}
+            </div>
+            <div class="input-field">
+                {{ form_label(form.message, "Votre message") }}
+                {{ form_widget(form.message, {'attr': {'class': 'validate materialize-textarea'}}) }}
+                {{ form_errors(form.message) }}
+            </div>
+            <div>
+                {{ form_widget(form.envoyer, {'attr': {'class': 'valider_contact z-depth-1 blue darken-1 btn'}}) }}
+            </div>
+        </div>
         {{ form_end(form) }}
+
+    <div class="contact-annexe">
+        <hr>
+        <p class="center blue-text text-darken-1">Sinon, vous pouvez m'envoyer directement un mail à : thibaut
+            .gruffy@gmail.com</p>
     </div>
-</div>
+    </div>
+
 {% endblock %}

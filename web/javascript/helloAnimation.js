@@ -39,7 +39,7 @@ $(function () {
            opacity: 1,
             fontSize: "2.5em",
             marginBottom: "15px",
-            marginTop: "7%"
+            marginTop: "5%"
         }, 1000);
     }
 
