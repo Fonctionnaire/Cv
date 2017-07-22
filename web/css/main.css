@@ -1,3 +1,18 @@
+h2, p, li, a, h4
+{
+    font-family: 'Ruda', sans-serif !important;
+}
+
+h2
+{
+    padding-top: 20px !important;
+}
+
+body
+{
+    background-image: url("../images/paper-2500942_1920.jpg");
+}
+
 /* HEADER ET FOOTER */
 
 
@@ -169,6 +184,12 @@
     max-height: 170px;
 }
 
+.competence
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #etoiles-sf, #etoiles-php, #etoiles-sql, #etoiles-html, #etoiles-boot, #etoiles-mat, #etoiles-js, #etoiles-jq, #etoiles-wp, #etoiles-gp, #etoiles-git, #etoiles-unit
 {
     display: flex;
@@ -176,6 +197,8 @@
 }
 
 /* PAGE REALISATIONS */
+
+
 .collapsible-body
 {
     margin-left: 0 !important;

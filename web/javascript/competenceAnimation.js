@@ -98,40 +98,7 @@ function etoileJsCinque()
 }, 1000);
 
 }
-// 4eme ligne
 
-function etoileGpUn() {
-
-    $('.etoile-gp-un').animate({
-        opacity: 1
-    }, 1000);
-
-}
-
-function etoileGpDeux() {
-    $('.etoile-gp-deux').animate({
-        opacity: 1
-    }, 1000);
-}
-
-function etoileGpTrois() {
-    $('.etoile-gp-trois').animate({
-        opacity: 1
-    }, 1000);
-}
-
-function etoileGpQuatre() {
-    $('.etoile-gp-quatre').animate({
-        opacity: 1
-    }, 1000);
-}
-
-function etoileGpCinque()
-{$('.etoile-gp-cinq').animate({
-    opacity: 1
-}, 1000);
-
-}
 
 // =================================
    $(window).scroll(function () {
@@ -155,13 +122,6 @@ function etoileGpCinque()
            setTimeout(etoileJsTrois, 600);
            setTimeout(etoileJsQuatre, 800);
            setTimeout(etoileJsCinque, 1000);
-       }
-       if(pageYOffset >= 2000){
-           etoileGpUn();
-           setTimeout(etoileGpDeux, 400);
-           setTimeout(etoileGpTrois, 600);
-           setTimeout(etoileGpQuatre, 800);
-           setTimeout(etoileGpCinque, 1000);
        }
    });
 
