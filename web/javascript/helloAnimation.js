@@ -24,12 +24,12 @@ $(function () {
        $('.photo').animate({
           opacity: 1,
            width: "260px",
-           height: "335px"
+           height: "349px"
        }, 1000);
 
        $('.photo img').animate({
           width: "260px",
-           height: "335px"
+           height: "349px"
        }, 1000);
    }
 

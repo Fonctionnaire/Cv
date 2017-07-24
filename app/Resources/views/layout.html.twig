@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     {% include 'scriptAndMeta/meta.html.twig' %}
     <title>Thibaut Gruffy</title>
+
 </head>
 <body>
 <header>
@@ -13,12 +14,13 @@
 
         <nav class="blue darken-1 z-depth-5">
             <div class="nav-wrapper">
-                <ul class="hide-on-med-and-down">
+                <ul>
                     <li><a href="{{ path('home') }}">< Accueil ></a></li>
                     <li><a href="#parcours">< Parcours ></a></li>
                     <li><a href="#competences">< Compétences ></a></li>
                     <li><a href="#realisation">< Réalisations ></a> </li>
-                    <li><a href="{{ path('contact') }}">< Me contacter ></a></li>
+                    <li><a href="#hobby">< Hobby ></a> </li>
+                    <li><a href="#contact">< Me contacter ></a></li>
                 </ul>
             </div>
         </nav>
@@ -29,13 +31,19 @@
 {% block javascript %}
 {% endblock %}
 {% include 'flash/flash-messages.html.twig' %}
-{% block textAreaScript %}
-{% endblock %}
+
 {% block content %}
 {% endblock %}
 
-<footer>
+<footer class="page-footer">
+    <div class="footer-copyright light-green darken-2">
+        <div class="container">
 
+            © Copyright {{ "now"|date("Y") }} Thibaut Gruffy - Tous droits réservés
+            <a class="blue-text text-darken-1 right linkedin" href="https://www.linkedin.com/in/thibaut-gruffy-777713121/" target="_blank">LinkedIn</a>
+
+        </div>
+    </div>
 </footer>
 </body>
 </html>

@@ -11,6 +11,7 @@ h2
 body
 {
     background-image: url("../images/paper-2500942_1920.jpg");
+    background-attachment: fixed;
 }
 
 /* HEADER ET FOOTER */
@@ -47,6 +48,18 @@ body
 .nav-wrapper li a:hover
 {
     font-size: 1.4em;
+}
+
+.page-footer
+{
+    padding-top: 0 !important;
+    margin-top: 50px;
+}
+
+.linkedin
+{
+    font-size: 1.2em !important;
+    font-weight: bold;
 }
 
 /* SCROLLSPY */
@@ -193,6 +206,7 @@ body
 #etoiles-sf, #etoiles-php, #etoiles-sql, #etoiles-html, #etoiles-boot, #etoiles-mat, #etoiles-js, #etoiles-jq, #etoiles-wp, #etoiles-gp, #etoiles-git, #etoiles-unit
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -268,80 +282,40 @@ body
     font-size: 1.2em;
 }
 
-/* PAGE CONTACT */
+/* MAIS AUSSI */
 
-.contact-container
+
+.maisAussi-container p
 {
-    padding: 35px;
-    margin-top: 50px !important;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.champ-oblig
-{
-    font-style: italic;
-    font-size: 0.8em;
-}
-
-.input-field label {
-    color: #c0ca33 !important;
-    font-size: 15px !important;
-}
-
-.input-field input[type=text] {
-
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field input[type=email] {
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field input[type=password] {
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field input[type=text].valid
-{
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field input[type=email].valid
-{
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field input[type=password].valid
-{
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field textarea{
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.input-field textarea.valid
-{
-    border-bottom: 2px solid #c0ca33 !important;
-}
-
-.valider_contact
-{
-    display: block;
-    margin-left: auto;
-}
-
-.contact-annexe
-{
-    margin-top: 35px;
-}
-
-.contact-annexe hr
+.maisAussi-container hr
 {
     margin-bottom: 35px;
 }
 
-.contact-annexe p
+.maisAussi-container .row
+{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+/* CONTACT */
+
+
+.contact-container
+ {
+    padding: 0 35px 35px;
+ }
+.details-contact p
 {
     font-size: 1.3em;
+    margin-top: 25px;
+}
+
+.dispo
+{
     font-weight: bold;
 }
+
